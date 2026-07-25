@@ -1,4 +1,4 @@
-requests
-Pillow
-ndspy
-beautifulsoup4
+requests>=2.28.0
+Pillow>=9.0.0
+ndspy>=1.1.0
+beautifulsoup4>=4.11.0
