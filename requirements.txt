@@ -1,0 +1,4 @@
+requests
+Pillow
+ndspy
+beautifulsoup4
