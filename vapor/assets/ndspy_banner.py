@@ -15,7 +15,6 @@ import io
 
 try:
     import ndspy.rom
-    import ndspy.banner
 except ImportError:
     raise ImportError(
         "ndspy library required for NDS banner support. "
@@ -49,12 +48,12 @@ class NDSBannerHandler:
         """
         try:
             rom = ndspy.rom.ROM.fromFile(str(rom_path))
-            if not rom.banner:
+            if not rom.iconBanner:
                 logger.debug(f"No banner found in {rom_path.name}")
                 return None
 
-            # ndspy.banner has a `image` property that returns PIL Image
-            banner_img = rom.banner.image
+            # ndspy.rom.iconBanner has a `image` property that returns PIL Image
+            banner_img = rom.iconBanner.image
             logger.info(f"Successfully read banner from {rom_path.name}")
             return banner_img
 
