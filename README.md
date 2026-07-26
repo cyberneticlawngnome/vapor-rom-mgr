@@ -21,6 +21,8 @@ Vapor manages ROM collections, save files, and emulator assets across multiple g
 - **Nintendo 3DS** (3DS, 3DS XL, New 3DS, New 3DS XL)
   - Detection via FTP (ftpd banner + SYST) or SD card (ID0 structure)
   - ROM type filtering by hardware capability
+  - **Asset handlers**: GameTDB (primary, opt-in with API key) + DuckDuckGo fallback
+  - **NDS banner support**: Read/write NDS banners via ndspy (optional)
 - **DS-Pico Flash Cart**
   - Direct SD card mounting
   - DS-Lite and DS-i variant support
@@ -61,6 +63,8 @@ Systems are implemented as plugins:
 Assets are handled via pluggable handlers:
 
 - `vapor/assets/base.py` — Abstract `AssetHandler` class
+- `vapor/assets/gametdb.py` — **NEW**: GameTDB metadata & cover art (opt-in with API key)
+- `vapor/assets/ndspy_banner.py` — **NEW**: NDS banner read/write (safe, with round-trip tests)
 - `vapor/assets/picocover.py` — (Planned) PicoCover integration
 - `vapor/assets/local.py` — Local filesystem assets
 
@@ -92,11 +96,24 @@ On startup, Vapor scans mount points and:
 
 ### Asset Management
 
-- **Asset Resolution Chain**:
-  1. ROM-specific overrides (roms/overrides/pokemon-hacks.json)
-  2. Series-level fallbacks (roms/overrides/series-assets.json)
-  3. PicoCover lookup (if not a ROM hack)
-  4. Generic fallback
+- **Asset Resolution Chain** (for 3DS):
+  1. Check local cache (TwiLight icons)
+  2. **Try GameTDB** (if API key configured) → primary source
+  3. **Fall back to DuckDuckGo** image search (if enabled)
+  4. Skip if no icon available (logged)
+
+- **GameTDB Integration**:
+  - Reads API key from `config/devices/*.json` → `assets.gametdbApiKey` field
+  - Completely opt-in: no key = no GameTDB calls
+  - Includes retry logic (3 attempts) and timeout handling (10s)
+  - Automatic caching of fetched covers
+
+- **NDS Banner Support** (ndspy-based):
+  - Safe read of NDS ROM banners
+  - Safe write with automatic backup
+  - Single-frame banner creation from images
+  - Round-trip test support (read → modify → write)
+  - Optional; requires `ndspy` in requirements.txt
 
 - **DS-Pico Asset Ingestion**: Discover and cache pre-existing assets from DS card:
   ```bash
@@ -155,7 +172,7 @@ pip install -r requirements.txt
 
 - **requests** — HTTP client for asset fetching
 - **Pillow** — Image processing (icon/banner generation)
-- **ndspy** — NDS/DSi ROM parsing
+- **ndspy** — NDS/DSi ROM parsing (optional, for banner support)
 - **beautifulsoup4** — HTML parsing for web scraping
 
 ## Usage
@@ -218,6 +235,31 @@ python -m vapor ingest-assets ds-pico-001
 }
 ```
 
+### 3DS with GameTDB Asset Handler
+
+`config/devices/steamdeck-3ds-xl.json` (extended):
+
+```json
+{
+  "deviceId": "steamdeck-3ds-xl",
+  "name": "SteamDeck 3DS XL",
+  "system": "3DS",
+  "hardware": "3DS-XL",
+  "connectionMethod": "sd",
+  "mountPoint": "/mnt/steamdeck/microsd",
+  "romPath": "/ROMs",
+  "assets": {
+    "gametdbApiKey": "YOUR_GAMETDB_API_KEY"
+  },
+  "storageThresholds": {
+    "warningPercent": 80,
+    "abortPercent": 90
+  }
+}
+```
+
+**Note**: GameTDB API keys are managed locally — never stored in the repo.
+
 ### DS-Pico with ROM Hacks
 
 `config/devices/ds-pico-001.json`:
@@ -261,6 +303,23 @@ python -m vapor ingest-assets ds-pico-001
 }
 ```
 
+## Testing
+
+```bash
+python -m pytest tests/
+```
+
+Run tests with verbose output:
+
+```bash
+python -m pytest tests/ -v
+```
+
+Tests include:
+- `test_ndspy_banner.py` — NDS banner read/write/round-trip tests
+- `test_gametdb.py` — GameTDB API handler tests (mocked)
+- `test_threeds_assets.py` — 3DS asset integration tests
+
 ## Roadmap
 
 - [ ] PSP support (FTP + SD fallback)
@@ -269,14 +328,8 @@ python -m vapor ingest-assets ds-pico-001
 - [ ] Web UI for configuration
 - [ ] Multi-device batch operations
 - [ ] ROM validation & checksums
-- [ ] Custom banner/icon generation from source images
 - [ ] Homebrew detection & filtering
-
-## Testing
-
-```bash
-python -m pytest tests/
-```
+- [ ] NDS banner editor GUI (using ndspy)
 
 ## Contributing
 
@@ -294,6 +347,7 @@ MIT
 ## References
 
 - [CONFIG.md](CONFIG.md) — Configuration schema & examples
-- [PicoCover](https://github.com/Scaletta/PicoCover) — DS game metadata
+- [GameTDB](https://www.gametdb.com/) — Game metadata & cover art API
 - [ndspy](https://github.com/RoadrunnerWMC/ndspy) — NDS file format parser
+- [PicoCover](https://github.com/Scaletta/PicoCover) — DS game metadata
 - [TWiLight Menu++](https://github.com/DS-Homebrew/TWiLightMenu) — 3DS/DS emulation hub

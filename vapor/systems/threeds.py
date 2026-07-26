@@ -227,6 +227,11 @@ class Nintendo3DSPlugin(SystemPlugin):
 
         3DS uses icons in specific locations depending on emulator.
 
+        Asset resolution chain:
+        1. Try GameTDB (if API key configured)
+        2. Fall back to DuckDuckGo image search
+        3. Skip if neither succeeds
+
         Args:
             asset_map: Mapping of ROM paths to asset info
             dry_run: If True, only show what would be pushed
@@ -236,66 +241,93 @@ class Nintendo3DSPlugin(SystemPlugin):
         """
         logger.info(f"Pushing assets for {len(asset_map)} ROMs (dry_run={dry_run})")
 
+        # Import asset handlers
         from vapor.assets.twilight import TwiLightAssetHandler
+        from vapor.assets.gametdb import GameTDBHandler
         try:
             from vapor.assets.search import ddg_image_search, download_image
         except Exception:
             ddg_image_search = None
             download_image = None
 
-        handler = TwiLightAssetHandler(cache_dir=Path.home() / '.config' / 'deck-console-mgr' / 'assets')
+        # Read GameTDB API key from config if available
+        gametdb_key = self.device_config.get("assets", {}).get("gametdbApiKey")
+        gametdb_handler = GameTDBHandler(api_key=gametdb_key) if gametdb_key else None
+
+        twilight_handler = TwiLightAssetHandler(
+            cache_dir=Path.home() / ".config" / "vapor-rom-mgr" / "twilight_assets"
+        )
 
         results = {"pushed": 0, "skipped": 0, "failed": 0, "details": []}
 
-        # For each ROM in asset_map, ensure icon exists (generate if allowed), then push to device
+        # For each ROM in asset_map, try to fetch/generate icon, then push to device
         for rom_path, assets in asset_map.items():
             rom_basename = os.path.basename(rom_path)
-            # try to find cached icon
-            icon_bytes = handler.fetch_icon(rom_basename)
             icon_path = None
+
+            # Try to find cached icon first
+            icon_bytes = twilight_handler.fetch_icon(rom_basename)
             if icon_bytes:
-                # write to a temp local file so push_to_sd can copy
-                asset_dir = handler.cache_dir / os.path.splitext(rom_basename)[0]
+                asset_dir = twilight_handler.cache_dir / os.path.splitext(rom_basename)[0]
                 asset_dir.mkdir(parents=True, exist_ok=True)
                 icon_path = asset_dir / f"{rom_basename}.png"
                 if not icon_path.exists():
                     icon_path.write_bytes(icon_bytes)
-
+                logger.info(f"Using cached icon for {rom_basename}")
             else:
-                # attempt to generate via image search fallback if enabled
-                # Check device or global config for gametdb key -- prefer GameTDB (not implemented here)
-                allow_search = True
-                # perform duckduckgo search if available
-                if ddg_image_search and download_image:
+                # Try GameTDB if available
+                if gametdb_handler and gametdb_handler.enabled:
+                    cover_bytes = gametdb_handler.fetch_cover_art(rom_basename, platform="GBA")
+                    if cover_bytes:
+                        asset_dir = twilight_handler.cache_dir / os.path.splitext(rom_basename)[0]
+                        asset_dir.mkdir(parents=True, exist_ok=True)
+                        icon_path = asset_dir / f"{rom_basename}.png"
+                        icon_path.write_bytes(cover_bytes)
+                        logger.info(f"Fetched cover art for {rom_basename} from GameTDB")
+                    else:
+                        logger.debug(f"No cover art from GameTDB for {rom_basename}")
+
+                # Fallback to DuckDuckGo image search if still no icon
+                if not icon_path and ddg_image_search and download_image:
                     query = f"{os.path.splitext(rom_basename)[0]} box art"
                     urls = ddg_image_search(query, max_results=1)
                     if urls:
-                        tmpdir = handler.cache_dir / os.path.splitext(rom_basename)[0]
+                        tmpdir = twilight_handler.cache_dir / os.path.splitext(rom_basename)[0]
                         tmpdir.mkdir(parents=True, exist_ok=True)
-                        candidate = tmpdir / 'candidate1.img'
+                        candidate = tmpdir / "candidate1.img"
                         ok = download_image(urls[0], str(candidate))
                         if ok:
                             try:
-                                generated = handler.generate_twilight_icon(str(candidate), str(tmpdir / f"{rom_basename}.png"))
+                                generated = twilight_handler.generate_twilight_icon(
+                                    str(candidate), str(tmpdir / f"{rom_basename}.png")
+                                )
                                 icon_path = Path(generated)
                                 logger.info(f"Generated icon for {rom_basename} from web candidate")
                             except Exception as e:
                                 logger.warning(f"Failed to generate twilight icon for {rom_basename}: {e}")
 
             if not icon_path or not icon_path.exists():
-                results['skipped'] += 1
-                results['details'].append({'rom': rom_path, 'status': 'skipped', 'reason': 'no icon available'})
+                results["skipped"] += 1
+                results["details"].append(
+                    {"rom": rom_path, "status": "skipped", "reason": "no icon available"}
+                )
                 continue
 
-            # push to device file system (SD-based path expected)
+            # Push to device file system (SD-based path expected)
             device_mount = str(self.mount_point)
             device_rom_path = self.rom_path
-            pushed = handler.push_to_sd(device_mount, device_rom_path, os.path.splitext(rom_basename)[0], str(icon_path), dry_run=dry_run)
+            pushed = twilight_handler.push_to_sd(
+                device_mount,
+                device_rom_path,
+                os.path.splitext(rom_basename)[0],
+                str(icon_path),
+                dry_run=dry_run,
+            )
             if pushed:
-                results['pushed'] += 1
-                results['details'].append({'rom': rom_path, 'status': 'pushed', 'asset': str(icon_path)})
+                results["pushed"] += 1
+                results["details"].append({"rom": rom_path, "status": "pushed", "asset": str(icon_path)})
             else:
-                results['failed'] += 1
-                results['details'].append({'rom': rom_path, 'status': 'failed', 'asset': str(icon_path)})
+                results["failed"] += 1
+                results["details"].append({"rom": rom_path, "status": "failed", "asset": str(icon_path)})
 
         return results
