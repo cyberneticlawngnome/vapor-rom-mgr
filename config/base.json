@@ -1,0 +1,7 @@
+{
+    "gametdbApiKey": "YOUR_OPTIONAL_KEY_HERE",
+    "scan_ip_start": "10.0.0.100",
+    "scan_ip_stop": "10.0.0.150",
+
+
+}

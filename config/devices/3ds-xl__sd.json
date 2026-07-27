@@ -1,0 +1,13 @@
+{
+  "deviceId": "3ds-xl__sd",
+  "name": "3DS XL mounted",
+  "system": "3DS",
+  "hardware": "3DS-XL",
+  "connectionMethod": "sd",
+  "mountPoint": "/mnt/steamdeck/microsd",
+  "romPath": "/ROMs",
+  "storageThresholds": {
+    "warningPercent": 80,
+    "abortPercent": 90
+  }
+}

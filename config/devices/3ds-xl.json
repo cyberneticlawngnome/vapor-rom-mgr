@@ -1,0 +1,21 @@
+{
+  "deviceId": "3ds-xl",
+  "name": "SteamDeck 3DS XL (Wireless)",
+  "system": "3DS",
+  "hardware": "3DS-XL",
+  "connectionMethod": "ftp",
+  "network": {
+    "host": "192.168.1.150",
+    "port": 5000,
+    "user": "anonymous",
+    "password": ""
+  },
+  "romPath": "/roms",
+  "assets": {
+    "gametdbApiKey": "YOUR_OPTIONAL_KEY_HERE"
+  },
+  "storageThresholds": {
+    "warningPercent": 80,
+    "abortPercent": 90
+  }
+}

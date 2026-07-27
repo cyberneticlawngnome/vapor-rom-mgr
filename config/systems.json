@@ -1,0 +1,8 @@
+{"systems":{
+  "3DS": {
+    "capabilities": ["gb", "gbc", "gba", "nes", "snes", "nds", "3ds"]
+  },
+  "DS-Pico": {
+    "capabilities": ["gb", "gbc", "nes", "nds"]
+  }
+}}

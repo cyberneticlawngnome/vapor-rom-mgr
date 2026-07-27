@@ -34,7 +34,7 @@ try:
 except Exception:
     ndspy = None
 
-CONFIG_DIR = os.path.expanduser("~/.config/deck-console-mgr")
+CONFIG_DIR = os.path.expanduser("config/")
 DEFAULT_CONFIG_PATH = os.path.join(CONFIG_DIR, "default.json")
 ASSETS_DIR = os.path.join(CONFIG_DIR, "assets")
 

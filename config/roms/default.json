@@ -1,0 +1,1240 @@
+{
+  "romSets": [
+    {
+      "architecture": "gb",
+      "roms": [
+        {
+          "path": "Mystic Quest.gb",
+          "series": "Uncategorized",
+          "hash": "b6a08c7e3af4ec8c9559cd268115d97c",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Mega Man II.gb",
+          "series": "MegaMan",
+          "hash": "7fe07271d04ed9e0bc0663dde55a2ae4",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Mega Man V.gb",
+          "series": "MegaMan",
+          "hash": "ceb17d831b410d91aa41bf2819cbed82",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Mega Man IV.gb",
+          "series": "MegaMan",
+          "hash": "8a00f627b8902c92327435901c249e19",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Mega Man - Dr. Wily's Revenge.gb",
+          "series": "MegaMan",
+          "hash": "2c1358474573c9dd38d6a128f4714a86",
+          "isCustom": false
+        },
+        {
+          "path": "Castlevania/Castlevania - Legends.gb",
+          "series": "Castlevania",
+          "hash": "1475824e7262c0d6359f43c287e034a5",
+          "isCustom": false
+        },
+        {
+          "path": "Castlevania/Castlevania Adventure, The.gb",
+          "series": "Castlevania",
+          "hash": "7c0cbb81025deed9e32ecdca5f1bb482",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Super Mario Land 2 - 6 Golden Coins.gb",
+          "series": "Mario",
+          "hash": "4bd6e929ec716a5c7fe7dc684860d551",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Blue Version.gb",
+          "series": "Pokemon",
+          "hash": "50927e843568814f7ed45ec4f944bd8b",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Red Version (USA, Europe) (SGB Enhanced).gb",
+          "series": "Pokemon",
+          "hash": "3d45c1ee9abd5738df46d2bdda8b57dc",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Brown.gb",
+          "series": "Pokemon",
+          "hash": "854390c4a18d0a1744fb437037b4a531",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Yellow - Special Pikachu Edition.gb",
+          "series": "Pokemon",
+          "hash": "d9290db87b1f0a23b89f99ee4469e34b",
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "architecture": "gbc",
+      "roms": [
+        {
+          "path": "Dragon Quest Monsters.gbc",
+          "series": "Uncategorized",
+          "hash": "08bca718c62e3c2870a2df107fc0a562",
+          "isCustom": false
+        },
+        {
+          "path": "Crystalis.gbc",
+          "series": "Uncategorized",
+          "hash": "f36a0ed25a601c039b1171d9daf241d6",
+          "isCustom": false
+        },
+        {
+          "path": "MightAndMagic/Heroes of Might and Magic II.gbc",
+          "series": "MightAndMagic",
+          "hash": "ad37726c92f43ad7915225b7eaf94ffd",
+          "isCustom": false
+        },
+        {
+          "path": "MightAndMagic/Warriors of Might and Magic.gbc",
+          "series": "MightAndMagic",
+          "hash": "f0656cf3aa3d6b539fb1b7da0fd27617",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Mega Man Xtreme 1.gbc",
+          "series": "MegaMan",
+          "hash": "4681f5b931a2e60ca163facd1adf56ed",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Mega Man Xtreme 2.gbc",
+          "series": "MegaMan",
+          "hash": "1f64989765f605d05cbd013e7ffcc352",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda, The - Oracle of Ages.gbc",
+          "series": "Zelda",
+          "hash": "c4639cc61c049e5a085526bb6cac03bb",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda, The - Link's Awakening DX.gbc",
+          "series": "Zelda",
+          "hash": "1043fd167d0ed9c4094e3c9d8e757f1e",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda, The - Oracle of Seasons.gbc",
+          "series": "Zelda",
+          "hash": "f2dc6c4e093e4f8c6cbea80e8dbd62cb",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Super Mario Bros. Deluxe.gbc",
+          "series": "Mario",
+          "hash": "1fd75c2b798c04acd4b99ad2f1006280",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Silver.gbc",
+          "series": "Pokemon",
+          "hash": "2ac166169354e84d0e2d7cf4cb40b312",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Halloween.gbc",
+          "series": "Pokemon",
+          "hash": "108d1ce30f243b726c9f4023a8cfc2a8",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Yellow.gbc",
+          "series": "Pokemon",
+          "hash": "d9290db87b1f0a23b89f99ee4469e34b",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Crystal.gbc",
+          "series": "Pokemon",
+          "hash": "301899b8087289a6436b0a241fbbb474",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Gold.gbc",
+          "series": "Pokemon",
+          "hash": "a6924ce1f9ad2228e1c6580779b23878",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Peridot.gbc",
+          "series": "Pokemon",
+          "hash": "fd32c8762e32b35e9d7d2bfc2c0cf1ad",
+          "isCustom": true
+        },
+        {
+          "path": "ResidentEvil/Resident Evil Gaiden.gbc",
+          "series": "ResidentEvil",
+          "hash": "8a7f483857e251d56a16594ca84d1a7e",
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "architecture": "gba",
+      "roms": [
+        {
+          "path": "Phantasy Star Collection.gba",
+          "series": "Uncategorized",
+          "hash": "44cb8b5e4f829df6f61bd2af8b115067",
+          "isCustom": true
+        },
+        {
+          "path": "Harvest Moon - Friends of Mineral Town.gba",
+          "series": "Uncategorized",
+          "hash": "80355c831a7a25b0f70dc021ebd344f1",
+          "isCustom": false
+        },
+        {
+          "path": "Riviera - The Promised Land.gba",
+          "series": "Uncategorized",
+          "hash": "16b5f1c6f8567cbe42f7562fccbb6426",
+          "isCustom": false
+        },
+        {
+          "path": "Tactics Ogre - The Knight of Lodis.gba",
+          "series": "Uncategorized",
+          "hash": "5d4f385e4e1cfa4a057d0ac828993906",
+          "isCustom": false
+        },
+        {
+          "path": "Contra Advance - the Alien Wars EX.gba",
+          "series": "Uncategorized",
+          "hash": "deb9740c2871d0729a9b00386d22dba6",
+          "isCustom": true
+        },
+        {
+          "path": "Tales of Phantasia.gba",
+          "series": "Uncategorized",
+          "hash": "70fa9e5d34134d1b46d9abdb43fea624",
+          "isCustom": false
+        },
+        {
+          "path": "Mother 3.gba",
+          "series": "Uncategorized",
+          "hash": "ce5c7ba6fbe648e6d65d77030151d6f5",
+          "isCustom": true
+        },
+        {
+          "path": "Metroid/Metroid - Zero Mission.gba",
+          "series": "Metroid",
+          "hash": "ebbce58109988b6da61ebb06c7a432d5",
+          "isCustom": false
+        },
+        {
+          "path": "Metroid/Metroid Fusion.gba",
+          "series": "Metroid",
+          "hash": "af5040fc0f579800151ee2a683e2e5b5",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 1.gba",
+          "series": "MegaMan",
+          "hash": "9ff40cf640575211202b7bda5487abbb",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 4 - Blue Moon.gba",
+          "series": "MegaMan",
+          "hash": "e9dfe02b283e29d67c224ab6f86c3b9c",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 3 - White Version.gba",
+          "series": "MegaMan",
+          "hash": "68817204a691449e655cba739dbb0165",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 3.gba",
+          "series": "MegaMan",
+          "hash": "6fe31df0144759b34ad666badaacc442",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 6 - Cybeast Falzar.gba",
+          "series": "MegaMan",
+          "hash": "1e8c774ba210d1c55113531c7360c737",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Zero 2.gba",
+          "series": "MegaMan",
+          "hash": "182363b0698322e1864ced6e9eed7ead",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 5 - Team Colonel.gba",
+          "series": "MegaMan",
+          "hash": "68d79f7c8f41f7c8009f3b85119cb1c6",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 4 - Red Sun.gba",
+          "series": "MegaMan",
+          "hash": "d0dee5c06972cb072391cd968a248d52",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman and Bass.gba",
+          "series": "MegaMan",
+          "hash": "88792ae1fbc74f4a5425d0c6f0482023",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 5 - Team Protoman.gba",
+          "series": "MegaMan",
+          "hash": "71b00ba406c522d3cec48311bd7bc760",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 6 - Cybeast Gregar.gba",
+          "series": "MegaMan",
+          "hash": "5acc75848bb1ffd3d6d8705554ee333d",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Zero 1.gba",
+          "series": "MegaMan",
+          "hash": "b24a17d080a01a404cbf018ba42b9803",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Battle Network 2.gba",
+          "series": "MegaMan",
+          "hash": "39f8a42133df444eeb7bf0b2194d6286",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/Megaman Zero 4.gba",
+          "series": "MegaMan",
+          "hash": "0d1e88bdb09ff68adf9877a121325f9c",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda, The - The Minish Cap.gba",
+          "series": "Zelda",
+          "hash": "a104896da0047abe8bee2a6e3f4c7290",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda, The - A Link To The Past.gba",
+          "series": "Zelda",
+          "hash": "623bd6af417ed48b5dbbfd19e78a80d9",
+          "isCustom": true
+        },
+        {
+          "path": "Zelda/The Legend of Zelda - The Minish Cap.gba",
+          "series": "Zelda",
+          "hash": "2af78edbe244b5de44471368ae2b6f0b",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda, The - Classic NES.gba",
+          "series": "Zelda",
+          "hash": "c0a26ae6d6bc38e07f87c9a860de8586",
+          "isCustom": false
+        },
+        {
+          "path": "Castlevania/Castlevania - Harmony of Dissonance.gba",
+          "series": "Castlevania",
+          "hash": "8ad99e2b123c460027f44b3f823fa296",
+          "isCustom": true
+        },
+        {
+          "path": "Castlevania/Castlevania - Circle of the Moon.gba",
+          "series": "Castlevania",
+          "hash": "50a1089600603a94e15ecf287f8d5a1f",
+          "isCustom": false
+        },
+        {
+          "path": "Castlevania/Castlevania - Aria of Sorrow.gba",
+          "series": "Castlevania",
+          "hash": "dbc934c572d47b434cb43878c749bff4",
+          "isCustom": true
+        },
+        {
+          "path": "Castlevania/Castlevania - Classic NES.gba",
+          "series": "Castlevania",
+          "hash": "1f90a64fb3b26abee5ff9284fe628758",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Super Mario Advance 4 - Super Mario Bros. 3.gba",
+          "series": "Mario",
+          "hash": "605286b3aedeffba70bf46b834b120b1",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Super Mario Advance 2 - Super Mario World.gba",
+          "series": "Mario",
+          "hash": "2f660377581b7e48c06131f56c791b72",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Super Mario Bros. - Classic NES.gba",
+          "series": "Mario",
+          "hash": "97e977d6bb8b2e45a5ad6952dd9a5481",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Mario and Luigi - Superstar Saga.gba",
+          "series": "Mario",
+          "hash": "4b1a5897d89d9e74ec7f630eefdfd435",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Mario Kart Super Circuit.gba",
+          "series": "Mario",
+          "hash": "784a036ff1aae709e90167186639b75e",
+          "isCustom": false
+        },
+        {
+          "path": "GoldenSun/Golden Sun.gba",
+          "series": "GoldenSun",
+          "hash": "1cdd7f33c9a27061201e1d1ce029a700",
+          "isCustom": false
+        },
+        {
+          "path": "GoldenSun/Golden Sun - The Lost Age.gba",
+          "series": "GoldenSun",
+          "hash": "8efe8b2aaed97149e897570cd123ff6e",
+          "isCustom": false
+        },
+        {
+          "path": "FinalFantasy/Final Fantasy 6 Advance.gba",
+          "series": "FinalFantasy",
+          "hash": "d1c3d1798a3f347fbab41f151c99dece",
+          "isCustom": false
+        },
+        {
+          "path": "FinalFantasy/Final Fantasy 5 Advance.gba",
+          "series": "FinalFantasy",
+          "hash": "9ed82843cc54876362be56faccb15d75",
+          "isCustom": false
+        },
+        {
+          "path": "FinalFantasy/Final Fantasy 1 + 2 - Dawn of Souls.gba",
+          "series": "FinalFantasy",
+          "hash": "5d29999685413c4d2bec10d3160f6ee6",
+          "isCustom": false
+        },
+        {
+          "path": "FinalFantasy/Final Fantasy 4 Advance.gba",
+          "series": "FinalFantasy",
+          "hash": "c74dd5cc3ab6e5d4ac53b1677e1abd69",
+          "isCustom": false
+        },
+        {
+          "path": "FinalFantasy/Final Fantasy - Tactics Advanced.gba",
+          "series": "FinalFantasy",
+          "hash": "cd99cdde3d45554c1b36fbeb8863b7bd",
+          "isCustom": false
+        },
+        {
+          "path": "Kirby/Kirby and The Amazing Mirror.gba",
+          "series": "Kirby",
+          "hash": "1c759edf84a20174989588664bbbec55",
+          "isCustom": false
+        },
+        {
+          "path": "BreathOfFire/Breath of Fire.gba",
+          "series": "BreathOfFire",
+          "hash": "17a32cfa3d0a5c74f914281ef55c75cd",
+          "isCustom": false
+        },
+        {
+          "path": "FireEmblem/Fire Emblem - The Binding Blade.gba",
+          "series": "FireEmblem",
+          "hash": "9fc134a926a9f2fe84a141aba2ba25a9",
+          "isCustom": true
+        },
+        {
+          "path": "FireEmblem/Fire Emblem.gba",
+          "series": "FireEmblem",
+          "hash": "f1a1b9742fcd467a531dd4314c4e7d19",
+          "isCustom": false
+        },
+        {
+          "path": "FireEmblem/Fire Emblem - the Sacred Stones.gba",
+          "series": "FireEmblem",
+          "hash": "005531fef9efbb642095fb8f64645236",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Recordkeepers.gba",
+          "series": "Pokemon",
+          "hash": "196a84ae1b6c9096eaa4b31eee35159d",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Inkwell.gba",
+          "series": "Pokemon",
+          "hash": "4640b286fe9baa47b5989dcb8a14dd5d",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Emerald Rogue.gba",
+          "series": "Pokemon",
+          "hash": "d0fa291806dddac638cbd85591895448",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Elysium.gba",
+          "series": "Pokemon",
+          "hash": "b16d27ee00538824ad70cdbed976b763",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Too Many Types 2.gba",
+          "series": "Pokemon",
+          "hash": "0b9462d49fcf4f5bbe70c4a771535c8a",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Amethyst.gba",
+          "series": "Pokemon",
+          "hash": "f88847a93dd51ec24f9de28d62d00571",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Ultra Violet.gba",
+          "series": "Pokemon",
+          "hash": "51901a6e40661b3914aa333c802e24e8",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Heart and Soul.gba",
+          "series": "Pokemon",
+          "hash": "108b996b72cb1d463045d1423ab9f144",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Fire Red.gba",
+          "series": "Pokemon",
+          "hash": "e26ee0d44e809351c8ce2d73c7400cdd",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Emerald.gba",
+          "series": "Pokemon",
+          "hash": "605b89b67018abcea91e693a4dd25be3",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Celia's Stupid Romhack.gba",
+          "series": "Pokemon",
+          "hash": "bd221b7e0c5b4692de6b25fbe656b92f",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Chaos Black.gba",
+          "series": "Pokemon",
+          "hash": "a1dd6c83dae9c57dda0f522943358a6c",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Unbound.gba",
+          "series": "Pokemon",
+          "hash": "9cad8e771940e7f7094d13911552cef0",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Elite Redux.gba",
+          "series": "Pokemon",
+          "hash": "cbb1f6a7d9834d93dba3659b397bb915",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Leaf Greem.gba",
+          "series": "Pokemon",
+          "hash": "9d33a02159e018d09073e700e1fd10fd",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Super Mariomon.gba",
+          "series": "Pokemon",
+          "hash": "c18b896ac69a67b2fdf493f166da9b49",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - ROWE.gba",
+          "series": "Pokemon",
+          "hash": "f6bfa0a1c3442ca1ef879ba15a417e82",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Too Many Types 1.gba",
+          "series": "Pokemon",
+          "hash": "e7ec28748911cf3895f930d59d6d0120",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Sword and Shield Ultimate Plus.gba",
+          "series": "Pokemon",
+          "hash": "63940c626d3b31a3da42e7531f8b43de",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Odyssey.gba",
+          "series": "Pokemon",
+          "hash": "c1a19efc331c0489912e70178bda1004",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Sunset.gba",
+          "series": "Pokemon",
+          "hash": "2667aee4769f74249dafa48a2bbe481f",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - FireRed and LeafGreen plus.gba",
+          "series": "Pokemon",
+          "hash": "3ff0d0a6d17bafaaba1724ef202da03d",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Crystal Advance Redux.gba",
+          "series": "Pokemon",
+          "hash": "df0165213a84dcc50a3f2bda673918c2",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Radical Red.gba",
+          "series": "Pokemon",
+          "hash": "8529f3a45d32bce4da637976fcf269d4",
+          "isCustom": true
+        }
+      ]
+    },
+    {
+      "architecture": "nds",
+      "roms": [
+        {
+          "path": "Etrian Odyssey 2 - Heroes of Lagaard.nds",
+          "series": "Uncategorized",
+          "hash": "56a903f23e8bd1a427bd3e4786249e33",
+          "isCustom": false
+        },
+        {
+          "path": "Maple Story.nds",
+          "series": "Uncategorized",
+          "hash": "5d77e96899ec0da28ecd5b3ff15b87ed",
+          "isCustom": true
+        },
+        {
+          "path": "Lunar - Dragon Song.nds",
+          "series": "Uncategorized",
+          "hash": "1ebdeefb05421326f66cbcb82b2eaaba",
+          "isCustom": false
+        },
+        {
+          "path": "MightAndMagic/Might & Magic - Clash of Heroes.nds",
+          "series": "MightAndMagic",
+          "hash": "5d199a11d86997a75d0741f680a16d57",
+          "isCustom": true
+        },
+        {
+          "path": "Metroid/Metroid Prime - Hunters.nds",
+          "series": "Metroid",
+          "hash": "9fe5f1eb1eb9dc5d90130408f813b39e",
+          "isCustom": false
+        },
+        {
+          "path": "Metroid/Metroid Prime Hunters.nds",
+          "series": "Metroid",
+          "hash": "b4c8a9398866b49c7be17d75736a223b",
+          "isCustom": false
+        },
+        {
+          "path": "Digimon/Digimon World.nds",
+          "series": "Digimon",
+          "hash": "aa68ac42848e257aa715f1d9937f6a2c",
+          "isCustom": false
+        },
+        {
+          "path": "Digimon/Digimon World - Dawn.nds",
+          "series": "Digimon",
+          "hash": "61a532b01d97392bb2a2d68955486d03",
+          "isCustom": false
+        },
+        {
+          "path": "Digimon/Digimon World - Dusk.nds",
+          "series": "Digimon",
+          "hash": "35b6209cf0a69b68a5f78c07d9433c27",
+          "isCustom": false
+        },
+        {
+          "path": "MegaMan/MegaMan Battle Network 5 - Double Team DS.nds",
+          "series": "MegaMan",
+          "hash": "339f0cf5c7b0e1e243c66f40fc7159bc",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda - Phantom Hourglass, The.nds",
+          "series": "Zelda",
+          "hash": "745e372bde611c2ceb3ec5db2bbeb77a",
+          "isCustom": false
+        },
+        {
+          "path": "Zelda/Legend of Zelda - Spirit Tracks, The.nds",
+          "series": "Zelda",
+          "hash": "1fc910c48f67f01688b56c69c8cbd3e4",
+          "isCustom": true
+        },
+        {
+          "path": "Castlevania/Castlevania - Portrait of Ruin.nds",
+          "series": "Castlevania",
+          "hash": "17a6618c3c7f5547d7c38fc04cb2666e",
+          "isCustom": false
+        },
+        {
+          "path": "Castlevania/Castlevania - Dawn of Sorrow.nds",
+          "series": "Castlevania",
+          "hash": "cc0f25b8783fb83cb4588d1c111bdc18",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Mario and Luigi - Bowser's Inside Story.nds",
+          "series": "Mario",
+          "hash": "52cefbf66051f3256db84bac2d08e3bc",
+          "isCustom": true
+        },
+        {
+          "path": "Mario/Super Mario 64 DS.nds",
+          "series": "Mario",
+          "hash": "82ea4525a39dc2f484a054cff3f1b834",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/New Super Mario Bros.nds",
+          "series": "Mario",
+          "hash": "a2ddba012e5c3c2096d0be57cc273be5",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Mario Party DS.nds",
+          "series": "Mario",
+          "hash": "668f97b1e2254dc966c0e735155c1a87",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Mario Kart DS.nds",
+          "series": "Mario",
+          "hash": "8cbf438d5a7c0d9acbe56a9b627ca6c5",
+          "isCustom": false
+        },
+        {
+          "path": "Mario/Mario & Luigi - Bowser's Inside Story.nds",
+          "series": "Mario",
+          "hash": "ce8d3cbcb07d95e4f613b879dd45297e",
+          "isCustom": true
+        },
+        {
+          "path": "Mario/Mario and Luigi - Partners in Time.nds",
+          "series": "Mario",
+          "hash": "9119d4c0bb3c07b57e46a9c9d8b5ade7",
+          "isCustom": false
+        },
+        {
+          "path": "GoldenSun/Golden Sun - Dark Dawn.nds",
+          "series": "GoldenSun",
+          "hash": "b9ccd41841684ccb279c9ae78b154ea6",
+          "isCustom": false
+        },
+        {
+          "path": "DragonQuest/Dragon Quest V - Hand of the Heavenly Bride.nds",
+          "series": "DragonQuest",
+          "hash": "748ef5fe4f178f28090d9788cc95630a",
+          "isCustom": true
+        },
+        {
+          "path": "DragonQuest/Dragon Quest IX - Sentinels of the Starry Skies.nds",
+          "series": "DragonQuest",
+          "hash": "ce8a56bc94f53d7841475edc308b0421",
+          "isCustom": false
+        },
+        {
+          "path": "Contra/Contra 4.nds",
+          "series": "Contra",
+          "hash": "74bde12741469d1a266ec0c60672464d",
+          "isCustom": false
+        },
+        {
+          "path": "OfMana/Heroes of Mana.nds",
+          "series": "OfMana",
+          "hash": "4b8d6761d168e2bccc69b2cbfbb159f0",
+          "isCustom": false
+        },
+        {
+          "path": "OfMana/Children of Mana.nds",
+          "series": "OfMana",
+          "hash": "8ee63d29f7fd11b2dba740cba5c700fb",
+          "isCustom": false
+        },
+        {
+          "path": "FireEmblem/Fire Emblem - Shadow Dragon.nds",
+          "series": "FireEmblem",
+          "hash": "548b35dcfb1ae8d110d4967d482b56f1",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Black 1.nds",
+          "series": "Pokemon",
+          "hash": "37bff1431eda9b3a525737c7f59a432d",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - White 1.nds",
+          "series": "Pokemon",
+          "hash": "77c34ba77f8fa44e7caf04f695db0560",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Diamond.nds",
+          "series": "Pokemon",
+          "hash": "02a1af2a677d101394b1d99164a8c249",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Pearl.nds",
+          "series": "Pokemon",
+          "hash": "e5da92c8cfabedd0d037ff33a2f2b6ba",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon Conquest.nds",
+          "series": "Pokemon",
+          "hash": "bf8c3cf9104ba124846a206e94f7b0d2",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Heart Gold.nds",
+          "series": "Pokemon",
+          "hash": "ae2a483d0a5e8130d39f44f41a86df57",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - Black 2.nds",
+          "series": "Pokemon",
+          "hash": "603583dc6e1b86f786dfe971c5641e85",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon Ranger.nds",
+          "series": "Pokemon",
+          "hash": "93181a900afd5352eee32cb005bcbbba",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Platinum.nds",
+          "series": "Pokemon",
+          "hash": "f8905424f7d8aea299c51ec7580b33d8",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon Mystery Dungeon - Explorers of Time.nds",
+          "series": "Pokemon",
+          "hash": "a95888306e2681b990fcef216bf52d94",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - Soul Silver.nds",
+          "series": "Pokemon",
+          "hash": "706a77bb5183a22b8436a46e38f2dd32",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon - White 2.nds",
+          "series": "Pokemon",
+          "hash": "0afc7974c393265d8cf23379be232a1c",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon Mystery Dungeon - Explorers of Sky.nds",
+          "series": "Pokemon",
+          "hash": "ef6e0ec5e1b482aa77c0b2f623128ef9",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon - VANTA Black.nds",
+          "series": "Pokemon",
+          "hash": "1d9d6c988f86b6236fe4c10c87a95e1c",
+          "isCustom": true
+        },
+        {
+          "path": "Pokemon/Pokemon Dash.nds",
+          "series": "Pokemon",
+          "hash": "381e4de452063d758e9f16ff40e22faa",
+          "isCustom": false
+        },
+        {
+          "path": "Pokemon/Pokemon Ranger - Shadows of Almia.nds",
+          "series": "Pokemon",
+          "hash": "de834c0d9e8b37e7e39253b9441950f5",
+          "isCustom": true
+        },
+        {
+          "path": "ResidentEvil/Resident Evil - Deadly Silence.nds",
+          "series": "ResidentEvil",
+          "hash": "3c2bed30e73d5f31e2335557256dba85",
+          "isCustom": false
+        }
+      ]
+    },
+    {
+      "architecture": "nes",
+      "roms": [
+        {
+          "path": "Earth Bound Zero.nes",
+          "series": "Uncategorized",
+          "hash": "f6157b6bc875921d6f4ad028a0bfe703",
+          "isCustom": true
+        },
+        {
+          "path": "Final Fantasy.nes",
+          "series": "Uncategorized",
+          "hash": "d111fc7770e12f67474897aaad834c0c",
+          "isCustom": true
+        },
+        {
+          "path": "Crystalis.nes",
+          "series": "Uncategorized",
+          "hash": "545d341a017ce84641eaf77511efb458",
+          "isCustom": true
+        },
+        {
+          "path": "Metroid.nes",
+          "series": "Uncategorized",
+          "hash": "d7da4a907be0012abca6625471ef2c9c",
+          "isCustom": true
+        },
+        {
+          "path": "MegaMan/Mega Man 6.nes",
+          "series": "MegaMan",
+          "hash": "37bb1a39a69bc6d1bccae0dd5411330d",
+          "isCustom": true
+        },
+        {
+          "path": "MegaMan/Mega Man 2.nes",
+          "series": "MegaMan",
+          "hash": "caaeb9ee3b52839de261fd16f93103e6",
+          "isCustom": true
+        },
+        {
+          "path": "MegaMan/Mega Man 3.nes",
+          "series": "MegaMan",
+          "hash": "75b924155cafee335c9ea7a01bfc8efb",
+          "isCustom": true
+        },
+        {
+          "path": "MegaMan/Mega Man 5.nes",
+          "series": "MegaMan",
+          "hash": "d7d22bf9edfb16469975f7f4d8da518f",
+          "isCustom": true
+        },
+        {
+          "path": "MegaMan/Mega Man.nes",
+          "series": "MegaMan",
+          "hash": "e5a3a1305d9cfd6cace48097a0621f36",
+          "isCustom": true
+        },
+        {
+          "path": "MegaMan/Mega Man 4.nes",
+          "series": "MegaMan",
+          "hash": "7521eb54199f73cb04e1ccdd15ca971d",
+          "isCustom": true
+        },
+        {
+          "path": "Zelda/Legend of Zelda, The.nes",
+          "series": "Zelda",
+          "hash": "f4095791987351be68674a9355b266bc",
+          "isCustom": true
+        },
+        {
+          "path": "Zelda/Zelda 2 - The Adventure of Link.nes",
+          "series": "Zelda",
+          "hash": "764d36fa8a2450834da5e8194281035a",
+          "isCustom": true
+        },
+        {
+          "path": "Castlevania/Castlevania 3 - Dracula's Curse.nes",
+          "series": "Castlevania",
+          "hash": "d16a502d0125f23cc3d980ddc6b6f2e8",
+          "isCustom": true
+        },
+        {
+          "path": "Castlevania/Castlevania.nes",
+          "series": "Castlevania",
+          "hash": "10faa6e18bd5574932ec07cadaee0471",
+          "isCustom": true
+        },
+        {
+          "path": "Mario/Super Mario Bros 2.nes",
+          "series": "Mario",
+          "hash": "838436b995e619c65198f5057ef12ee0",
+          "isCustom": true
+        },
+        {
+          "path": "Mario/Super Mario Bros.nes",
+          "series": "Mario",
+          "hash": "673913a23cd612daf5ad32d4085e0760",
+          "isCustom": true
+        },
+        {
+          "path": "Mario/Super Mario World.nes",
+          "series": "Mario",
+          "hash": "d36859ab669d91122a282c0e80af6f80",
+          "isCustom": true
+        },
+        {
+          "path": "Ultima/Ultima - Quest of the Avatar.nes",
+          "series": "Ultima",
+          "hash": "d370c3788f5fe2fa6e02e9deadc7f56b",
+          "isCustom": true
+        },
+        {
+          "path": "Ultima/Ultima - Warriors of Destiny.nes",
+          "series": "Ultima",
+          "hash": "9d717349c03c8539048331f34c598e84",
+          "isCustom": true
+        }
+      ]
+    },
+    {
+      "architecture": "snes",
+      "roms": [
+        {
+          "path": "Breath of Fire.sfc",
+          "series": "Uncategorized",
+          "hash": "cdef890e99a0fb62c4d449d867c4244a",
+          "isCustom": false
+        },
+        {
+          "path": "Might and Magic II - Gates to Another World.smc",
+          "series": "Uncategorized",
+          "hash": "b05bcb14251f61abf83d666a36bd4a0f",
+          "isCustom": false
+        },
+        {
+          "path": "Star Fox 2.smc",
+          "series": "Uncategorized",
+          "hash": "d2a0516c438939f65c887508a9ff3994",
+          "isCustom": false
+        },
+        {
+          "path": "Ogre Battle - The March of the Black Queen.smc",
+          "series": "Uncategorized",
+          "hash": "e40187f96141ef4eb3560807b8f3eb77",
+          "isCustom": true
+        },
+        {
+          "path": "Super Mario World 2 - Yoshi's Island.smc",
+          "series": "Uncategorized",
+          "hash": "ce1e3e33b6e39d37b43d7de599f9e785",
+          "isCustom": false
+        },
+        {
+          "path": "Secret of Mana.smc",
+          "series": "Uncategorized",
+          "hash": "10a894199a9adc50ff88815fd9853e19",
+          "isCustom": false
+        },
+        {
+          "path": "Final Fantasy 2.smc",
+          "series": "Uncategorized",
+          "hash": "e27e0adb7cf09a9497a22ab96445d1b9",
+          "isCustom": true
+        },
+        {
+          "path": "Contra III - The Alien Wars.smc",
+          "series": "Uncategorized",
+          "hash": "ede82658dafdd6febbfbe6a9c9082500",
+          "isCustom": false
+        },
+        {
+          "path": "Mega Man X 3.smc",
+          "series": "Uncategorized",
+          "hash": "c53b1ce1a1c7b3a6c9dc8d061d8943f5",
+          "isCustom": true
+        },
+        {
+          "path": "Super Mario RPG - Legend of the Seven Stars.smc",
+          "series": "Uncategorized",
+          "hash": "d0b68d68d9efc0558242f5476d1c5b81",
+          "isCustom": false
+        },
+        {
+          "path": "Castlevania - Vampire's Kiss.smc",
+          "series": "Uncategorized",
+          "hash": "a62d08afd924004f11341f06a80d5f4a",
+          "isCustom": false
+        },
+        {
+          "path": "Super Metroid.smc",
+          "series": "Uncategorized",
+          "hash": "6a82002287e2395b01c99f455195a505",
+          "isCustom": true
+        },
+        {
+          "path": "Mega Man X.smc",
+          "series": "Uncategorized",
+          "hash": "3af54d455422b69186ca4876fbc137ba",
+          "isCustom": true
+        },
+        {
+          "path": "Super Mario Kart.smc",
+          "series": "Uncategorized",
+          "hash": "8b13d7d413545582099ab35298405417",
+          "isCustom": true
+        },
+        {
+          "path": "Chrono Trigger.smc",
+          "series": "Uncategorized",
+          "hash": "395bf4d0a75717b03c0c2131495faf7a",
+          "isCustom": true
+        },
+        {
+          "path": "Legend of Zelda, The - A Link to the Past.smc",
+          "series": "Uncategorized",
+          "hash": "1a74468291b02729329dd1357afb45af",
+          "isCustom": true
+        },
+        {
+          "path": "Super Mario All-Stars.smc",
+          "series": "Uncategorized",
+          "hash": "1574f4289f369471ee0e02d7c7cc39ec",
+          "isCustom": true
+        },
+        {
+          "path": "Ultima VII - The Black Gate.smc",
+          "series": "Uncategorized",
+          "hash": "cb08c0bb325d9ccf7e3975671cc5e178",
+          "isCustom": true
+        },
+        {
+          "path": "Shadowrun.smc",
+          "series": "Uncategorized",
+          "hash": "990dd092e7147a6998e62b168664f226",
+          "isCustom": true
+        },
+        {
+          "path": "Ultima VI - The False Prophet.smc",
+          "series": "Uncategorized",
+          "hash": "a7cea5f706d86ccac85003cd8340f1f6",
+          "isCustom": true
+        },
+        {
+          "path": "Mega Man 7.smc",
+          "series": "Uncategorized",
+          "hash": "c533c4ef3d086acec510a6e3b55b3af3",
+          "isCustom": false
+        },
+        {
+          "path": "Illusion of Gaia.smc",
+          "series": "Uncategorized",
+          "hash": "c0c48bea97b245cd8bfb39924b0be083",
+          "isCustom": true
+        },
+        {
+          "path": "Mega Man X 2.smc",
+          "series": "Uncategorized",
+          "hash": "67905b989b00046db06df3434ed79f04",
+          "isCustom": false
+        },
+        {
+          "path": "Breath of Fire 2.sfc",
+          "series": "Uncategorized",
+          "hash": "e1ff1ed4ad5dbdbe86774920dfb5e9d4",
+          "isCustom": false
+        },
+        {
+          "path": "Ys III - Wanderers from Ys.smc",
+          "series": "Uncategorized",
+          "hash": "79f07980a48628268e826e6cf0564102",
+          "isCustom": true
+        },
+        {
+          "path": "Castlevania - Dracula X.smc",
+          "series": "Uncategorized",
+          "hash": "dc629be2ee515461315cde57210e36c0",
+          "isCustom": false
+        },
+        {
+          "path": "Star Fox.smc",
+          "series": "Uncategorized",
+          "hash": "e8acc24a1ec85edc4873c430af7b3181",
+          "isCustom": true
+        },
+        {
+          "path": "Final Fantasy 3.smc",
+          "series": "Uncategorized",
+          "hash": "581340fac027d19795f417d797bf5ea7",
+          "isCustom": true
+        },
+        {
+          "path": "Lufia II - Rise of the Sinistrals.smc",
+          "series": "Uncategorized",
+          "hash": "0268e8e3b4822abbb8578823add5b8da",
+          "isCustom": true
+        },
+        {
+          "path": "Final Fantasy - Mystic Quest.smc",
+          "series": "Uncategorized",
+          "hash": "5668cacf5be55f58d6ed59fb27d08e5a",
+          "isCustom": true
+        },
+        {
+          "path": "Super Castlevania IV.smc",
+          "series": "Uncategorized",
+          "hash": "7efb9119e23ac9969c4d1f074f9f1f2e",
+          "isCustom": true
+        },
+        {
+          "path": "Ultima - Runes of Virtue II.smc",
+          "series": "Uncategorized",
+          "hash": "1fe23a30c142eab90ad2973eeb2f3098",
+          "isCustom": true
+        },
+        {
+          "path": "Super Mario All-Stars + Super Mario World.smc",
+          "series": "Uncategorized",
+          "hash": "7ecaf3e2e021c8a836041c85886f4594",
+          "isCustom": false
+        },
+        {
+          "path": "Tales of Phantasia.smc",
+          "series": "Uncategorized",
+          "hash": "b129c6068d5db3548cf79445fc962f76",
+          "isCustom": true
+        },
+        {
+          "path": "Lufia & The Fortress of Doom.smc",
+          "series": "Uncategorized",
+          "hash": "934288b9eb659faedf4c710187281568",
+          "isCustom": true
+        },
+        {
+          "path": "Super Mario World.smc",
+          "series": "Uncategorized",
+          "hash": "dbe1f3c8f3a0b2db52b7d59417891117",
+          "isCustom": true
+        }
+      ]
+    }
+  ]
+}
