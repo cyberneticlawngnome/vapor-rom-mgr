@@ -277,3 +277,4 @@ User runs: `vapor-rom-mgr sync`
 5. For SteamDeck: loads `config/devices/steamdeck-3ds-xl.json`, applies `config/roms/default.json`
 6. For DS-Pico: loads `config/devices/ds-pico-001.json`, applies `config/roms/default.json`, filters by DS-i capabilities
 7. Runs dry-run first (shows what would sync), then syncs on user confirmation
+
