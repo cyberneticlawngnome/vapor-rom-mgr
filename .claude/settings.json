@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest --collect-only)",
+      "Bash(pip3 list *)",
+      "Read(//c/Python310/**)",
+      "Bash(/c/Python310/python --version)",
+      "Bash(/c/Python310/python -m pytest --collect-only)",
+      "Bash(/c/Python310/python -m pip install -e /cygdrive/c/cygwin64/home/Computer/vapor/vapor-rom-mgr)"
+    ]
+  }
+}
