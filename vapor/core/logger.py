@@ -16,11 +16,8 @@ class ContextFilter(logging.Filter):
         self.context = {}
 
     def filter(self, record):
-        if self.context:
-            if "device" in self.context:
-                record.device = self.context["device"]
-            if "operation" in self.context:
-                record.operation = self.context["operation"]
+        record.device = self.context.get("device", "-")
+        record.operation = self.context.get("operation", "-")
         return True
 
 
