@@ -2,6 +2,8 @@
 
 import argparse
 import sys
+from pathlib import Path
+
 from .rom_manager import ROMManager
 
 
@@ -90,7 +92,7 @@ def _print_asset_result(result: dict) -> None:
 
 def main() -> None:
     p = argparse.ArgumentParser(prog="vapor", description="ROM & asset manager for flash carts")
-    p.add_argument("--config", type=argparse.Path, default=None, help="Config directory (default: ./config)")
+    p.add_argument("--config", type=lambda p: Path(p), default=None, help="Config directory (default: ./config)")
 
     sub = p.add_subparsers(dest="command")
 
