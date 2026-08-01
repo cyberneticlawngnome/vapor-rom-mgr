@@ -1,0 +1,9 @@
+{
+  "deviceId": "psp",
+  "name": "PSP-3001",
+  "system": "PSP",
+  "connectionMethod": "sd",
+  "mountPoint": "/run/media/deck/PSP",
+  "romPath": "/ISO",
+  "storageThresholds": {"warningPercent": 80, "abortPercent": 90}
+}

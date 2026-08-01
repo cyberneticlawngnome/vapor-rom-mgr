@@ -1,0 +1,11 @@
+{
+  "deviceId": "3ds-xl-new",
+  "name": "3DS XL New (10.0.0.104)",
+  "system": "3DS",
+  "hardware": "New-3DS-XL",
+  "connectionMethod": "ftp",
+  "network": {"host": "10.0.0.104", "port": 5000, "user": "anonymous", "password": ""},
+  "romPath": "/roms",
+  "assets": {"gametdbApiKey": ""},
+  "storageThresholds": {"warningPercent": 80, "abortPercent": 90}
+}

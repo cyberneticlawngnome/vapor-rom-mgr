@@ -3,6 +3,9 @@
     "capabilities": ["gb", "gbc", "gba", "nes", "snes", "nds", "3ds"]
   },
   "DS-Pico": {
-    "capabilities": ["gb", "gbc", "nes", "nds"]
+    "capabilities": ["gb", "gbc", "gba", "nes", "nds"]
+  },
+  "PSP": {
+    "capabilities": ["psp_iso", "ps1"]
   }
 }}

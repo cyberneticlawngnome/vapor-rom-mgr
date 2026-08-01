@@ -1,0 +1,11 @@
+{
+  "deviceId": "3ds-older",
+  "name": "Older 3DS (10.0.0.105)",
+  "system": "3DS",
+  "hardware": "3DS",
+  "connectionMethod": "ftp",
+  "network": {"host": "10.0.0.105", "port": 5000, "user": "anonymous", "password": ""},
+  "romPath": "/roms",
+  "assets": {"gametdbApiKey": ""},
+  "storageThresholds": {"warningPercent": 80, "abortPercent": 90}
+}

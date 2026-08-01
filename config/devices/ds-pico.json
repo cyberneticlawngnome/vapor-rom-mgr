@@ -1,0 +1,10 @@
+{
+  "deviceId": "ds-pico",
+  "name": "DS-Pico (DS-Lite)",
+  "system": "DS-Pico",
+  "dsPicoHardware": "DS-Lite",
+  "connectionMethod": "sd",
+  "mountPoint": "/run/media/deck/DS-PICO",
+  "romPath": "/roms",
+  "storageThresholds": {"warningPercent": 80, "abortPercent": 90}
+}
