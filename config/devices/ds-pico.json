@@ -4,7 +4,7 @@
   "system": "DS-Pico",
   "dsPicoHardware": "DS-Lite",
   "connectionMethod": "sd",
-  "mountPoint": "/run/media/deck/DS-PICO",
+  "mountPoint": "/run/media/deck/3332-3839",
   "romPath": "/roms",
   "storageThresholds": {"warningPercent": 80, "abortPercent": 90}
 }

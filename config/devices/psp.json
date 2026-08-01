@@ -3,7 +3,7 @@
   "name": "PSP-3001",
   "system": "PSP",
   "connectionMethod": "sd",
-  "mountPoint": "/run/media/deck/PSP",
+  "mountPoint": "/run/media/deck/disk",
   "romPath": "/ISO",
   "storageThresholds": {"warningPercent": 80, "abortPercent": 90}
 }
