@@ -138,11 +138,24 @@ class ConfigLoader:
 
     def _validate_device_config(self, config: Dict[str, Any]) -> None:
         """Validate device configuration structure."""
-        required = ["name", "system", "connectionMethod", "mountPoint", "romPath"]
+        required = ["name", "system", "connectionMethod", "romPath"]
+        conn_method = config.get("connectionMethod")
+
+        # mountPoint is required for SD connections; optional for FTP (derived from network.host)
+        if conn_method != "ftp":
+            required.append("mountPoint")
+
         missing = [key for key in required if key not in config]
 
         if missing:
             raise ConfigError(f"Missing required device config keys: {', '.join(missing)}")
+
+        # For FTP devices, populate mountPoint from network config
+        if conn_method == "ftp" and "mountPoint" not in config:
+            net = config.get("network", {})
+            host = net.get("host", "localhost")
+            port = net.get("port", 21)
+            config["mountPoint"] = f"ftp://{host}:{port}"
 
         # Validate system exists in systems config
         if self.systems_config:
